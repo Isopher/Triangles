@@ -1,0 +1,90 @@
+﻿@model Traingles.DomainModel.TriangleFinder.RequestedTriangle
+@{
+    Layout = "../Shared/_Layout.cshtml";
+}
+
+<h2>Triangle Finder</h2>
+<hr/>
+
+@Html.ValidationSummary(false, "", new {@class = "alert-danger"})
+
+@using (Html.BeginForm("FindByCoordinates", "TriangleFinder"))
+{
+    <div class="card">
+        <div class="card-header">
+            <h4>Find Triangle by Coordinates</h4>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label class="col-sm-3">Row</label>
+                <div class="col-sm4">
+                    @Html.TextBoxFor(x => x.sRow, new {@class = "form-control"})
+                    @Html.ValidationMessageFor(x => x.Row, "", new {@class = "alert-danger"})
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3">Column</label>
+                <div class="col-sm4">
+                    @Html.TextBoxFor(x => x.Column, new {@class = "form-control"})
+                    @Html.ValidationMessageFor(x => x.Column, "", new {@class = "alert-danger"})
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+}
+<hr/>
+
+@using (Html.BeginForm("FindByVertices", "TriangleFinder"))
+{
+    <div class="card">
+        <div class="card-header">
+            <h4>Find Triangle by Vertices</h4>
+        </div>
+        <div class="card-body col-sm-12">
+            <div class="form-group">
+                <label class="col-sm-3">&nbsp;</label>
+                <label class="col-sm-4">X</label>
+                <label class="col-sm-4">Y</label>
+            </div>
+            <div class="form-group form-row">
+                <label class="col-sm-3">Vertex 1</label>
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(x => x.X1, new {@class = "form-control"})
+                    @Html.ValidationMessageFor(x => x.X1, "", new {@class = "alert-danger"})
+                </div>
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(x => x.Y1, new {@class = "form-control"})
+                    @Html.ValidationMessageFor(x => x.Y1, "", new {@class = "alert-danger"})
+                </div>
+            </div>
+            <div class="form-group form-row">
+                <label class="col-sm-3">Vertex 2</label>
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(x => x.X2, new {@class = "form-control"})
+                    @Html.ValidationMessageFor(x => x.X2, "", new {@class = "alert-danger"})
+                </div>
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(x => x.Y2, new {@class = "form-control"})
+                    @Html.ValidationMessageFor(x => x.Y2, "", new {@class = "alert-danger"})
+                </div>
+            </div>
+            <div class="form-group form-row">
+                <label class="col-sm-3">Vertex 3</label>
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(x => x.X3, new {@class = "form-control"})
+                    @Html.ValidationMessageFor(x => x.X3, "", new {@class = "alert-danger"})
+                </div>
+                <div class="col-sm-4">
+                    @Html.TextBoxFor(x => x.Y3, new {@class = "form-control"})
+                    @Html.ValidationMessageFor(x => x.Y3, "", new {@class = "alert-danger"})
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+}

@@ -1,0 +1,6 @@
+C:\Users\keena\Source\Repos\Triangles\Traingles.DomainModel\bin\Debug\Traingles.DomainModel.dll
+C:\Users\keena\Source\Repos\Triangles\Traingles.DomainModel\bin\Debug\Traingles.DomainModel.pdb
+C:\Users\keena\Source\Repos\Triangles\Traingles.DomainModel\obj\Debug\Triangles.DomainModel.csproj.CoreCompileInputs.cache
+C:\Users\keena\Source\Repos\Triangles\Traingles.DomainModel\obj\Debug\Traingles.DomainModel.dll
+C:\Users\keena\Source\Repos\Triangles\Traingles.DomainModel\obj\Debug\Traingles.DomainModel.pdb
+C:\Users\keena\Source\Repos\Triangles\Traingles.DomainModel\obj\Debug\Triangles.DomainModel.csprojAssemblyReference.cache
